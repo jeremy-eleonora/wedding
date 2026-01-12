@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "BlackMango";
+  src: url('fonts/BlackMango-Regular.otf') format('opentype'),url('fonts/BlackMango-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT_Commons_Pro";
+  src: url('fonts/TT_Commons_Pro_Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #fffaf5;
+  font-family: "TT_Commons_Pro", "Arial Unicode MS", "Lucida Sans Unicode", "DejaVu Sans", "Quivira", "Symbola", "Code2000";
+}
+
+h1 {
+  color: #808b97;
+  margin-left: 20px;
+  text-align: center;
+  font-family: "BlackMango";
+}
+
+@media only screen and (min-width:700px) {
+    #arch {
+        float: left;
+        width: 400px;
+    }
+    
+    .arch {
+        aspect-ratio: 0.66;
+        width: 100%;
+    }
+    
+    #content {
+    }
+    
+    #separator {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #separator {
+        width: 60%;
+        border-top: 2px solid #072a49;
+    }
+
+    .arch {
+        aspect-ratio: 0.66;
+        max-width:400px;
+    }
+}
+
+.center {
+  text-align: center !important;
+  margin: 0 auto;
+  display: block;
+}
+
+#div-gifts, #div-photos {
+    
+}
+
+.toggle-group {
+    position: absolute;
+    right: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    float:right;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width:140px;
+    height:30px;
+    margin-left: auto;
+}
+
+.toggle-group button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.language-icon {
+    width:100%;
+    height:100%;
+    border-radius:8px;
+}
+
+.language-icon:hover {
+    box-shadow: 0 0 2px 1px #4448;
+}
+

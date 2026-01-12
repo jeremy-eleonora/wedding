@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/main.css">
+        <title>Jeremy & Eleonora</title>
+    </head>
+
+    <body>
+        <div class="toggle-group">
+            <!-- English -->
+            <button type="image" onclick="changeLanguage('en')">
+                <img class="language-icon" src="language/ie.svg" title="English"/>
+            </button>
+            <!-- French -->
+            <button type="image" onclick="changeLanguage('fr')">
+                <img class="language-icon" src="language/fr.svg" title="Français"/>
+            </button>
+            <!-- Italian -->
+            <button type="image" onclick="changeLanguage('it')">
+                <img class="language-icon" src="language/it.svg" title="Italiano"/>
+            </button>
+        </div>
+        <div id="arch" class="block">
+            <img class="center arch" src = "arch.svg" alt="Thank You from Eleonora and Jeremy"/>
+        </div>
+        <div id="content" class="block">
+            <div id="separator" class="center"></div>
+            <div id="div-gifts" class="center">
+                <h1 id="contribute" class="center">Contribute</h1>
+                <p id="contributeText1">If you would like to contribute to our wedding by offering us a gift or sending us some money you can find information on how to do that below:</p>
+                <p id="contributeText2">For gifts, we ask you to pick from <a href="registry.html">this list</a>. Don't forget to add your name so that we can properly thank you for it!</p>
+                <p id="contributeText3">If you want to send us money, you can do a bank transfer to the following account: ... Here is a list of projects we have that you can contribute to:</p>
+                    <ul>
+                        <li id="project1">House renovation (upstairs floor, roof, insulation,...)</li>
+                        <li id="project2">Holiday trips</li>
+                        <li id="project3">Home theater setup</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="separator" class="center"></div>
+            <div id="div-photos" class="center">
+                <h1 id="photos" class="center">Photos</h1>
+                <p id="photosText1">We invite you to share any photos that you have taken during our wedding receptions here, so that we can add them to our photo album.<br>
+                </p>
+                <button id="photosUpload">Upload photos</button>
+            </div>
+        </div>
+        <script src="language/language.js"></script>
+    </body>
+</html>
