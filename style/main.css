@@ -25,34 +25,46 @@ h1 {
   font-family: "BlackMango";
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:900px) {
+    body {
+        display:flex;
+    }
+    
     #arch {
         float: left;
-        width: 400px;
+        max-width:40%;
     }
-    
-    .arch {
-        aspect-ratio: 0.66;
-        width: 100%;
-    }
-    
+
     #content {
     }
     
     #separator {
         display: none;
     }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:899px) {
+    #arch {
+        margin: 0 auto;
+        display: block;
+        max-width:100%;
+        max-height:700px;
+        aspect-ratio: 0.72;
+    }
+    
     #separator {
         width: 60%;
         border-top: 2px solid #072a49;
-    }
-
-    .arch {
-        aspect-ratio: 0.66;
-        max-width:400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -62,8 +74,25 @@ h1 {
   display: block;
 }
 
+.vertical-container {
+  width: 94%;
+  position: relative;
+}
+
+#content {
+    margin-left:20px;
+    margin-right:42px;
+}
+
+#arch {
+    min-height:600px;
+}
+
+#arch img {
+    width: 100%;
+}
+
 #div-gifts, #div-photos {
-    
 }
 
 .toggle-group {
@@ -78,6 +107,7 @@ h1 {
     width:140px;
     height:30px;
     margin-left: auto;
+    z-index: 2;
 }
 
 .toggle-group button {
@@ -85,6 +115,21 @@ h1 {
     background: none;
     cursor: pointer;
     height: 100%;
+}
+
+.back-button {
+    position: absolute;
+    left: 50px;
+    float:left;
+    align-items: center;
+    padding: 5px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width:140px;
+    height:30px;
 }
 
 .language-icon {

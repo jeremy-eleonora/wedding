@@ -16,8 +16,7 @@
 
 body {
   color: #b1b1b1;
-  font-family: "Arial", Verdana, Tahoma;
-  font-size: 10px;
+  font-family: "TT_Commons_Pro", "Arial Unicode MS", "Lucida Sans Unicode", "DejaVu Sans", "Quivira", "Symbola", "Code2000";
 }
 
 div {
@@ -27,8 +26,17 @@ div {
     padding-bottom: 0px;
 }
 
+.intro {
+    text-align: center;
+    color: #000000;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
 #content {
-    padding-top: 18px;
+    padding-top: 38px;
+    width: 94%;
+    margin: 0 auto;
 }
 
 .wishlist {
@@ -36,8 +44,8 @@ div {
     border: 1px solid #e5e5e5;
     padding-left: 20px;
     padding-right: 20px;
-    width: 94%;
     margin: 0 auto;
+    margin-top: 48px;
 }
 
 .wishlist-item {
@@ -82,8 +90,6 @@ div {
 
 .prinfo p {
     color: #000000;
-    font-size: 1.6em;
-    font-family: 'Cardo', serif;
     font-weight: 400;
     font-style: italic;
     line-height: 21px;
@@ -94,15 +100,13 @@ div {
     float: right;
     color: #000000;
     font-size: 1.4em;
-    font-family: 'Lato', sans-serif;
+    font-family: "BlackMango";
     font-weight: 300;
     padding-top: 10px;
 }
 
 .prinfo h3 {
   color: #F06A54;
-  font-size: 1.6em;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   padding-bottom: 6px;
 }
@@ -111,8 +115,6 @@ div {
     display: inline;
     float: left;
     color: #000000;
-    font-size: 1.5em;
-    font-family: 'Cardo', serif;
     font-weight: 400;
     padding-top: 10px;
     padding-bottom: 0;
